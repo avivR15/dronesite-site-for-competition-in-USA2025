@@ -10,9 +10,10 @@ body {
 h1 {
     font-size: 60px;
     text-align: center;
-    background-color: lightblue;
     margin-top: 0px;
     margin-bottom: 10px;
+    background-color: lightblue;
+    color: #333;
 }
 h2 {
     font-size: 30px;
@@ -28,9 +29,10 @@ h3 {
     margin-left: 0px;    
 }
 h4 {
-    font-size: 40px;
-    text-align: center;
-    margin-top: 35px;
+    font-size: 20px;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 
 h5 {
@@ -154,7 +156,7 @@ section {
     margin-top: 80px;
     position: absolute;
     top: 15px;
-    left: 15px;
+    margin-left: 35%;
     background: linear-gradient(145deg, #ffffff, #e6f2ff);
     border: 2px solid #0077cc;
     padding: 10px 20px;
@@ -169,7 +171,6 @@ section {
     margin-top: 120px;
     position: absolute;
     left: 100px;
-
 }
 
 .searchBtn {
@@ -177,6 +178,7 @@ section {
     border: 1px solid #0077cc;
     transform: scale(2.4);
     margin-left: 23px;
+    outline: none;
 }
 
 #searchInput {
@@ -185,7 +187,7 @@ section {
     border: 1px solid #0077cc;
     transform: scale(2.4);
     font-size: 13px;
-    user-select: none;
+    outline: none;
 }
 
 
