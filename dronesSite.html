@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="droneSite.css">
+
+    <title>drones reali gang</title>
+</head>
+<body>
+    
+
+
+    <!-- <h1>Welcome to the drone site of reali</h1> -->
+    <button class="langBtn" onclick="toggleLanguage()">עברית</button>
+    <div class="searchBar">
+        <input type="text" id="searchInput" placeholder="Search..." />
+        <!-- couple click taking the user to the next destinations (Depends on how many times you clicked). -->
+        <button class="searchBtn" onclick="searchText()" data-en="Search" data-he="חפש-נה">Search</button>
+    </div>
+    <div class="errorCase">
+        <p id="searchError" style="color: red;"></p>
+    </div>
+    
+    <header id="webStart">
+        <h1 data-en="Team name - HRD Haifa Reali Drones" data-he="שם הקבוצה - HRD רחפני הריאלי חיפה">Team name - HRD Haifa Reali Drones</h1>
+        <p data-en="Contact: RealiDrones@gmail.com" data-he="RealiDrones@gmail.com :צור קשר">Contact: RealiDrones@gmail.com</p>
+    </header>
+
+    <nav>
+        <strong><a href=#webStart data-en="Home Page" data-he="דף הבית">Home Page</a></strong>
+        <a href="#media" data-en="Vehicle Media" data-he="מראה הרחפן">Vehicle Media</a>
+        <a href="#team" data-en="Team Info" data-he="חברי הקבוצה">Team Info</a>   
+        <a href="#docs" data-en="Design Docs" data-he="פירוט תוצר">Design Docs</a>
+        <a href="#about us" data-en="about us" data-he="לגבי עצמנו">about us</a>
+        <a href="#blog" data-en="Build Blog" data-he="הרכב תיעודי">Build Blog</a>
+        <a href="#procedures" data-en="procedures" data-he="נהלים ">procedures</a>
+        <a href="#sponsors" data-en="Sponsors" data-he="חסותינו">Sponsors</a>
+    </nav>
+
+
+
+    <section id="media" class="vehicle-media">
+        <section class="carousel-container">
+
+            <div class="carousel">
+              <button class="prev" onclick="prevImage()">&#10094;</button>
+              <div class="carousel-images">
+
+                <img id="carouselImage" src="main gruop image(1).jpg" alt="carousel image">
+
+              </div>
+              <button class="next" onclick="nextImage()">&#10095;</button>
+            </div>
+
+        </section>
+        
+        
+        
+        <section class="drone-angles-gallery">
+            <h2 data-en="Vehicle Photos & Videos" data-he="סרטונים ותמונות הרחפן">Vehicle Photos & Videos</h2>
+            <div class="image-grid">
+                <img src="drone pic(1).jpg" alt="Drone View 1">
+
+                <div class="stacked-images">
+                    <img src="drone pic(2).jpg" alt="Top image">
+                    <video class="small-video" controls>
+                        <source src="drone_vid1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>  
+                </div>
+
+                <img src="drone pic Front view (me in the background).jpg" alt="Drone View 3">
+                <img src="drone pic(4).jpg" alt="Bottom image" class="hover-zoom">
+                <img src="drone pic(5).jpg" alt="Group View 2" class="hover-zoom"> 
+                <img src="drone pic(6).jpg" alt="Group View 3" class="hover-zoom">
+            </div>
+            <ul data-en="Note: Pictures from our participation two years ago in 2023 appear here." data-he=".הערה: תמונות מהשתתפותנו לפני שנתיים בשנת 2023 מופיעות כאן">
+                Note: Pictures from our participation two years ago in 2023 appear here.
+            </ul>
+        </section>
+    </section>
+
+
+    
+    <section id="team">
+        <h2 data-en="Our team members:" data-he="האנשים הגדולים שלנו">Our team members:</h2>
+        <h3 data-en="Team management:" data-he="צוות ניהול">Team management:</h3>
+        <ul>
+            <li data-en="Jonathan Lotan - gruop manager" data-he="מנהל הקבוצה - יונתן לוטן">Jonathan Lotan - gruop manager</li>
+            <li data-en="Jonathan Tamir - gruop captain" data-he="קפטן הקבוצה - יונתן תמיר">Jonathan Tamir - gruop captain</li>
+            <li data-en="Beny - Supply manager" data-he="אחראי אספקה - בני">Beni - Supply manager</li>
+            <li data-en="Dolav - Group mentor" data-he="מדריך רחפנים - דולב">Dolav - Group mentor</li>
+            <br><br>
+        </ul>
+        <h3 data-en="Team website" data-he="צוות בניית אתר">Team website:</h3>
+        <ul>
+            <li data-en="Aviv Rosen - Main website programmer" data-he="מתכנת אתרים ראשי - אביב רוזן">Aviv Rosen - Main website programmer</li>
+            <li data-en="Ian Abuhamed - Head of programing" data-he="ראש צוות תכנות - איאן אבוחמד">Ian Abuhamed - Head of programing</li>
+            <li data-en="Dan Berenzweig - Website programer" data-he="מתכנת אתרים - דן ברנצוויג">Dan Bernzwig - Website programer</li>
+            <li data-en="Shira - Website programer" data-he="מתכנתת אתרים - שירה">Shira - Website programer</li>
+            <li data-en="Mika - Website programer" data-he="מתכנתת אתרים - מיקה">Mica - Website programer</li>
+            <br><br>
+        </ul>
+        <h3 data-en="Team dropping system" data-he="צוות מידול">Team dropping system:</h3>  
+        <ul>
+            <li data-en="Daniel Ben Zaken - 3D Systems modeler" data-he="ממדל בתלת מימד - דניאל בן זקן">Daniel Ben Zaken - Systems modeler</li>
+            <li data-en="Shalev - 3D Systems modeler" data-he="ממדל בתלת מימד - שליו">Shalev - Systems modeler</li>
+            <br><br>
+        </ul>
+        <h3 data-en="Team pilot" data-he="צוות הטסה">Team pilot:</h3>
+        <ul>
+            <li data-en="Shirel terdi-ovdia - Autonomous flight controller" data-he="אחראית הטסה אוטונומית - שיראל טרדי-עובדיה">Shirel terdi-ovdia - Autonomous flight controller</li>
+            <li data-en="Emma - Autonomous flight assistant" data-he="פקחית הטסה אוטונומית - אמה">Emma - Autonomous flight assistant</li>
+        </ul>
+    </section>
+
+
+
+    <section id="docs">
+        <h2 data-en="Design Documentation" data-he="פירוט תוצר">Design Documentation</h2>
+        <p>Download our <a href="מטול רימונים של ערבים.SLDPRT">design decision document</a>.</p>
+        <p>See our <a href=
+            "https://www.solidworks.com/customer-story/airview-robotics-propels-business-growth-and-product-innovation-3dexperience-works/?_gl=1*1ioj2zo*_up*MQ..*_ga*
+            OTQ0NzY3MzkxLjE3NDY3MTc2Nzc.*_ga_XQJPQWHZHH*czE3NDY3MTc2NzckbzEkZzAkdDE3NDY3MTc2NzckajAkbDAkaDA.*_ga_TPGKGE8GTG*czE3NDY3MTc2NzckbzEkZzAkdDE3NDY3MTc2NzckajAkbDAkaDA."
+        >assembly procedures</a> for building the chassis and wiring system.</p>
+        <p>Watch our <a href="https://www.youtube.com/watch?v=7Zda6OffNcs&t=13s">instructional video</a> for battery safety.</p>
+    </section>
+
+
+
+    <section id="about us">
+        <h2 data-en="About us" data-he="לגבי עצמנו">About us</h2>
+        <p data-en="We are the only Israeli group competing in the contest" data-he="הקבוצה הישראלית היחידה והנהדרת וגאווה ישראלית">We are the only Israeli group competing in the contest</p>
+    </section>
+
+
+
+    <section id="blog">
+        <h2 data-en="Build progress blog" data-he="התקדמות תיעודית">Build progress blog</h2>
+
+
+        <h3><strong data-en="October 2024" data-he="אוקטובר 2024">October 2024</strong></h3>
+        <p data-en="This month was the first to get off to a brisk start. We arrived at the kickoff – the first meeting facing the challenges, the guidelines and the deadline. After a brief explanation of the year’s mission, we already began to take shape and understand where we were headed. Immediately after the kickoff, we sat down as a group and divided roles according to interests and abilities – system engineers, pilots, programmers, website builders and more. Everyone took responsibility, and we knew that from here we would only take off. We had experience from previous years." data-he="החודש היה הראשון בסימן התחלה נמרצת. הגענו לקיקאוף – הפגישה הראשונה מול האתגרים, ההנחיות והזמן הקצוב. אחרי הסבר קצר על משימת השנה, כבר התחלנו להתגבש ולהבין לאן פנינו מועדות. מיד לאחר הקיקאוף, ישבנו כקבוצה וחילקנו תפקידים לפי תחומי עניין ויכולות – מהנדסי מערכת, טייסים, מתכנתים, בוני האתר ועוד. כל אחד לקח אחריות, וידענו שמכאן רק נמריא. היה לנו ניסיון משנים קודמות.">This month was the first to get off to a brisk start. We arrived at the kickoff – the first meeting facing the challenges, the guidelines and the deadline. After a brief explanation of the year’s mission, we already began to take shape and understand where we were headed. Immediately after the kickoff, we sat down as a group and divided roles according to interests and abilities – system engineers, pilots, programmers, website builders and more. Everyone took responsibility, and we knew that from here we would only take off. We had experience from previous years.</p>
+
+        <h3><strong data-en="November 2024" data-he="נובמבר 2024">November 2024</strong></h3>
+        <p data-en="This is the month when the first drone took to the sky. We went out into the open field to test the drone's tether. The wind was blowing, but the propellers were spinning – we conducted several experiments: stable flights, responses to commands from the controller, and release system tests. Some of the experiments ended in crashes... but it only strengthened our understanding of what needed to be improved." data-he="זה החודש שבו הרחפן הראשון התרומם לשמיים. יצאנו לשדה הפתוח כדי לבדוק את קשירות הרחפן. הרוח נשבה, אבל הפרופלורים הסתובבו – ערכנו מספר ניסויים: טיסות יציבות, תגובות לפקודות מהבקר, ובדיקות מערכת שחרור. חלק מהניסויים הסתיימו בריסוק... אבל זה רק חיזק אותנו להבין מה צריך לשפר.">This is the month when the first drone took to the sky. We went out into the open field to test the drone's tether. The wind was blowing, but the propellers were spinning – we conducted several experiments: stable flights, responses to commands from the controller, and release system tests. Some of the experiments ended in crashes... but it only strengthened our understanding of what needed to be improved.</p>
+
+        <h3><strong data-en="December 2024" data-he="דצמבר 2024">December 2024</strong></h3>
+        <p data-en="December was the month when we began to imagine the ideal drone. System design, drawings, components that needed to be ordered, and at the same time – deepening the release system that would bring us valuable points in the competition. We divided the teams into subgroups: mechanical design, control programming, and chassis construction. Each member of the group began to specialize, and new skills were acquired along the way – mainly through trial and error." data-he="דצמבר היה החודש שבו התחלנו לדמיין את הרחפן האידאלי. תכנון מערכות, שרטוטים, רכיבים שצריך להזמין, ובמקביל – העמקה במערכת השחרור שתביא לנו נקודות יקרות בתחרות. חילקנו את הצוותים לתת-קבוצות: תכנון מכני, תכנות בקרה, ובניית השלדה. כל חבר בקבוצה התחיל להתמחות, ומיומנויות חדשות נרכשו על הדרך – בעיקר בניסיון וטעייה.">December was the month when we began to imagine the ideal drone. System design, drawings, components that needed to be ordered, and at the same time – deepening the release system that would bring us valuable points in the competition. We divided the teams into subgroups: mechanical design, control programming, and chassis construction. Each member of the group began to specialize, and new skills were acquired along the way – mainly through trial and error.</p>
+        
+        <h3><strong data-en="Jenuery 2025" data-he="ינואר 2025">Jenuery 2025</strong></h3>
+        <p data-en="With the start of the new year, we also turned to our website. The technology team – led by Aviv, Ian, Dan, Shira and Mika – began building the digital platform that would represent us. While self-taught in HTML, CSS and JavaScript, a well-designed, dynamic and responsive website was created. Along the way, bugs appeared, languages ​​got confused, but every line of code brought us closer to the goal." data-he="עם תחילת השנה החדשה, פנינו גם לאתר שלנו. הצוות הטכנולוגי – בהובלת אביב, איאן, דן, שירה ומיקה – התחיל לבנות את הפלטפורמה הדיגיטלית שתייצג אותנו. תוך כדי למידה עצמית של HTML, CSS ו-JavaScript, הוקם אתר מעוצב, דינמי ורספונסיבי. על הדרך באגים הופיעו, שפות התבלבלו, אבל כל שורת קוד קירבה אותנו אל המטרה.">With the start of the new year, we also turned to our website. The technology team – led by Aviv, Ian, Dan, Shira and Mika – began building the digital platform that would represent us. While self-taught in HTML, CSS and JavaScript, a well-designed, dynamic and responsive website was created. Along the way, bugs appeared, languages ​​got confused, but every line of code brought us closer to the goal.</p>
+        
+        <h3><strong data-en="Febuery 2025" data-he="פברואר 2025">Febuery 2025</strong></h3>
+        <p data-en="The weeks passed and we reached a state of near readiness – so we returned to the field. We conducted a series of advanced flights that included simulations of the tasks in the competition: autonomous navigation, payload release, and target identification. We began to document everything – every flight was analyzed, every malfunction was fixed. The field became our second home." data-he="השבועות חלפו והגענו למצב של כמעט מוכנות – אז חזרנו לשטח. ערכנו סדרת הטסות מתקדמות שכללה סימולציות של המשימות בתחרות: ניווט עצמאי, שחרור מטענים, וזיהוי מטרות. התחלנו לתעד הכל – כל טיסה נותחה, כל תקלה הוסרה. השטח הפך לבית השני שלנו.">The weeks passed and we reached a state of near readiness – so we returned to the field. We conducted a series of advanced flights that included simulations of the tasks in the competition: autonomous navigation, payload release, and target identification. We began to document everything – every flight was analyzed, every malfunction was fixed. The field became our second home.</p>
+        
+        <h3><strong data-en="March 2025" data-he=" 2025 מרץ">March 2025</strong></h3>
+        <p data-en="As with any engineering project, not everything worked smoothly for us. In March, we entered a phase of troubleshooting. The drone was upgraded – the release system was renewed, the battery was replaced, and communications were improved. In addition, we continued to improve the website, add documentary media, technical documentation, and the parts required for flight proofing and modeling." data-he="כמו בכל פרויקט הנדסי, גם אצלנו – לא הכל עבד חלק. בחודש מרץ נכנסנו לשלב של תיקון תקלות. הרחפן עבר שדרוג – מערכת השחרור חודשה, הסוללה הוחלפה, התקשורת שופרה. בנוסף, המשכנו לשפר את האתר, להוסיף מדיה מתעדת, תיעוד טכני, ואת החלקים הנדרשים להוכחת הטסה ומידול.">As with any engineering project, not everything worked smoothly for us. In March, we entered a phase of troubleshooting. The drone was upgraded – the release system was renewed, the battery was replaced, and communications were improved. In addition, we continued to improve the website, add documentary media, technical documentation, and the parts required for flight proofing and modeling.</p>
+        
+        <h3><strong data-en="April 2025" data-he="אפריל 2025">April 2025</strong></h3>
+        <p data-en="The race to the finish line was starting to feel intense. We prepared a neat folder with all the necessary documents – planning documents, drawings, videos, and information about the team. We conducted dress rehearsals – both in the field and among ourselves, including simulations of a presentation to the judges. Even practicing unexpected questions. We made sure that the team acted in precise coordination, and everyone knew their place." data-he="המרוץ לקראת הקו הסיום התחיל להיות מורגש. הכנו תיקייה מסודרת עם כל המסמכים הנדרשים – מסמכי תכנון, שרטוטים, סרטונים, ומידע על הצוות. ביצענו חזרות גנרליות – גם בשטח וגם בין עצמנו, כולל הדמיות של פרזנטציה לשופטים. אפילו תרגול שאלות בלתי צפויות. ווידנו שהקבוצה פעלה בתיאום מדויק, וכל אחד ידע מה מקומו.">The race to the finish line was starting to feel intense. We prepared a neat folder with all the necessary documents – planning documents, drawings, videos, and information about the team. We conducted dress rehearsals – both in the field and among ourselves, including simulations of a presentation to the judges. Even practicing unexpected questions. We made sure that the team acted in precise coordination, and everyone knew their place.</p>
+        
+        <h3><strong data-en="May 2025" data-he="מאי 2025">May 2025</strong></h3>
+        <p data-en="The last month before the competition. We felt it in the air – we united all the components into one complete system. The pilots logged hours of flight time, the developers polished the website, and the documenters added the personal touch. The team website was completed with spectacular photos, flight videos, documents, and testimonials – just like a business card of a professional team. We booked flight tickets, booked a hotel to stay in during the competition days, and arranged a schedule for our stay in the United States." data-he="החודש האחרון לפני התחרות. הרגשנו את זה באוויר – איחדנו את כל הרכיבים למערכת אחת שלמה. הפיילוטים סגרו שעות של טיסה, המפתחים שייפו את האתר, והמתעדים הוסיפו את הנגיעה האישית. אתר הקבוצה הושלם עם תמונות מרהיבות, סרטוני טיסה, מסמכים ועדויות – ממש כמו כרטיס ביקור של צוות מקצועי. סגרנו כרטיסי טיסה, הזמנו מלון לישון בו בימי התחרות, וסידרנו סדר זמנים לזמן השהייה שלנו בארצות הברית.">The last month before the competition. We felt it in the air – we united all the components into one complete system. The pilots logged hours of flight time, the developers polished the website, and the documenters added the personal touch. The team website was completed with spectacular photos, flight videos, documents, and testimonials – just like a business card of a professional team. We booked flight tickets, booked a hotel to stay in during the competition days, and arranged a schedule for our stay in the United States.</p>
+    </section>
+
+
+
+    <section id="procedures">
+        <h2 data-en="General procedures" data-he="נהלים כלליים">General procedures</h2>
+
+
+        <strong><p data-en="Procedures number 1." data-he=".נהל מספר 1">Procedures number 1.</p></strong>
+        <p data-en="Respect and Collaboration. Treat all team members with respect. Listen actively, communicate clearly, and support each other." data-he="על חברי הקבוצה להתייחס אחד אל השני בכבוד. הקשיבו באופן פעיל, תקשרו בצורה ברורה ותמכו זה בזה.">Respect and Collaboration. Treat all team members with respect. Listen actively, communicate clearly, and support each other.</p>
+
+        <strong><p data-en="Procedures number 2." data-he=".נהל מספר 2">Procedures number 2.</p></strong>
+        <p data-en="Punctuality and Commitment. Arrive on time to all meetings and work sessions. Be consistent and committed to the team's progress." data-he="דייקנות ומחויבות. להגיע בזמן לכל הפגישות ופגישות העבודה. להיות עקביים ומחויבים להתקדמות הצוות.">Punctuality and Commitment. Arrive on time to all meetings and work sessions. Be consistent and committed to the team's progress.</p>
+
+        <strong><p data-en="Procedures number 3." data-he=".נהל מספר 3">Procedures number 3.</p></strong>
+        <p data-en="ResponsibilityComplete assigned tasks on time and take responsibility for your work. If you encounter a problem, communicate early." data-he="להשלים את המשימות שהוקצו בזמן ולקחת אחריות על העבודה. אם אתה נתקל בבעיה, פנה/י בהקדם.">Responsibility Complete assigned tasks on time and take responsibility for your work. If you encounter a problem, communicate early.</p>
+
+        <strong><p data-en="Procedures number 4." data-he=".נהל מספר 4">Procedures number 4.</p></strong>
+        <p data-en="Safety First Follow all safety guidelines when working with drones, tools, or equipment. Never operate drones unsupervised." data-he="בטיחות במקום הראשון יש להקפיד על כל הנחיות הבטיחות בעת עבודה עם רחפנים, כלים או ציוד. לעולם אל תפעילו רחפנים ללא פיקוח.">Safety First Follow all safety guidelines when working with drones, tools, or equipment. Never operate drones unsupervised.</p>
+
+        <strong><p data-en="Procedures number 5." data-he=".נהל מספר 5">Procedures number 5.</p></strong>
+        <p data-en="Open Communication Keep communication open and honest. Share ideas, ask questions, and give constructive feedback." data-he="תקשורת פתוחה שמרו על תקשורת פתוחה וכנה. שתפו רעיונות, שאלו שאלות ותנו משוב בונה.">Open Communication Keep communication open and honest. Share ideas, ask questions, and give constructive feedback.</p>
+
+        <strong><p data-en="Procedures number 6." data-he=".נהל מספר 6">Procedures number 6.</p></strong>
+        <p data-en="Respect the Workspace Keep the work area clean and organized. Return all tools and materials to their proper place." data-he="כבדו את סביבת העבודה שמרו על אזור העבודה נקי ומאורגן. החזירו את כל הכלים והחומרים למקומם המתאים.">Respect the Workspace Keep the work area clean and organized. Return all tools and materials to their proper place.</p>
+
+        <strong><p data-en="Procedures number 7." data-he=".נהל מספר 7">Procedures number 7.</p></strong>
+        <p data-en="Learning and Growth Approach every challenge as a learning opportunity. Be open to new skills and knowledge." data-he="למידה וצמיחה, התייחסו לכל אתגר כהזדמנות למידה. היו פתוחים למיומנויות וידע חדשים.">Learning and Growth Approach every challenge as a learning opportunity. Be open to new skills and knowledge.</p>
+
+        <strong><p data-en="Procedures number 8." data-he=".נהל מספר 8">Procedures number 8.</p></strong>
+        <p data-en="Represent the Team Whether online or in person, act respectfully and professionally as a representative of our team, school, and country." data-he="לייצג את הצוות בין אם באינטרנט או באופן אישי, להתנהג בכבוד ובמקצועיות כנציג הצוות, בית הספר והמדינה שלנו.">Represent the Team Whether online or in person, act respectfully and professionally as a representative of our team, school, and country.</p>
+
+    </section>
+
+
+    <section id="sponsors" class="sponsors">
+        <h2 data-en="Our Sponsors" data-he="תחת חסות">Our Sponsors</h2>
+        <div class="sponsors-frame">
+
+            <a href="https://dronix.co.il/" target="_blank">
+                <img src="dronix logo.jpeg" alt="Sponsor 1">
+            </a>
+
+            <a href="https://readyedi.co.il/" target="_blank">
+            <img src="reedyedi logo.jpeg" alt="Sponsor 2">
+            </a>
+
+            <a href="https://www.reali.org.il/en/" target="_blank">
+            <img src="the hebrew reali school logo (2).jpg" alt="Sponsor 3">
+            </a>
+
+            <a href="https://www.intel.com/content/www/us/en/homepage.html" target="_blank">
+            <img src="Intel logo.png" alt="Sponsor 4">
+            </a>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <p data-en="&copy; 2025 HRD Haifa Reali Drones Group | Website built with accessibility and modern design in mind." 
+        data-he="&copy; 2025 האתר נבנה תוך מחשבה על נגישות ועיצוב מודרני | קבוצת רחפני הריאלי חיפה">
+        &copy; 2025 HRD Haifa Reali Drones Group | Website built with accessibility and modern design in mind.</p>
+    </footer>
+
+
+</body>
+
+
+
+
+<script src="dronesSite.js"></script>
+</html>
