@@ -11,34 +11,39 @@
 <body>
     
 
+    <div>
+        <header id="webStart">
+            <h1 data-en="Team name - HRD Haifa Reali Drones" data-he="שם הקבוצה - HRD רחפני הריאלי חיפה">Team name - HRD Haifa Reali Drones</h1>
+        
 
-    <!-- <h1>Welcome to the drone site of reali</h1> -->
-    <button class="langBtn" onclick="toggleLanguage()">עברית</button>
-    <div class="searchBar">
-        <input type="text" id="searchInput" placeholder="Search..." />
-        <!-- couple click taking the user to the next destinations (Depends on how many times you clicked). -->
-        <button class="searchBtn" onclick="searchText()" data-en="Search" data-he="חפש-נה">Search</button>
+            <div class="row">
+                <button class="langBtn" onclick="toggleLanguage()">עברית</button>
+
+                <div class="searchBar">
+                    <input type="text" id="searchInput" placeholder="Search..." />
+                    <!-- couple click taking the user to the next destinations (Depends on how many times you clicked). -->
+                    <button class="searchBtn" onclick="searchText()" data-en="Search" data-he="חפש-נה">Search</button>
+                </div>
+                <div class="errorCase">
+                    <p id="searchError" style="color: red;"></p>
+                </div>
+
+                <h4 data-en="Contact: RealiDrones@gmail.com" data-he="RealiDrones@gmail.com :צור קשר">Contact: RealiDrones@gmail.com</h4>
+            </div>
+        </header>
+        
+
+        <nav>
+            <strong><a href=#webStart data-en="Home Page" data-he="דף הבית">Home Page</a></strong>
+            <a href="#media" data-en="Vehicle Media" data-he="מראה הרחפן">Vehicle Media</a>
+            <a href="#team" data-en="Team Info" data-he="חברי הקבוצה">Team Info</a>   
+            <a href="#docs" data-en="Design Docs" data-he="פירוט תוצר">Design Docs</a>
+            <a href="#about us" data-en="about us" data-he="לגבי עצמנו">about us</a>
+            <a href="#blog" data-en="Build Blog" data-he="הרכב תיעודי">Build Blog</a>
+            <a href="#procedures" data-en="procedures" data-he="נהלים ">procedures</a>
+            <a href="#sponsors" data-en="Sponsors" data-he="חסותינו">Sponsors</a>
+        </nav>
     </div>
-    <div class="errorCase">
-        <p id="searchError" style="color: red;"></p>
-    </div>
-    
-    <header id="webStart">
-        <h1 data-en="Team name - HRD Haifa Reali Drones" data-he="שם הקבוצה - HRD רחפני הריאלי חיפה">Team name - HRD Haifa Reali Drones</h1>
-        <h4 data-en="Contact: RealiDrones@gmail.com" data-he="RealiDrones@gmail.com :צור קשר">Contact: RealiDrones@gmail.com</h4>
-    </header>
-
-    <nav>
-        <strong><a href=#webStart data-en="Home Page" data-he="דף הבית">Home Page</a></strong>
-        <a href="#media" data-en="Vehicle Media" data-he="מראה הרחפן">Vehicle Media</a>
-        <a href="#team" data-en="Team Info" data-he="חברי הקבוצה">Team Info</a>   
-        <a href="#docs" data-en="Design Docs" data-he="פירוט תוצר">Design Docs</a>
-        <a href="#about us" data-en="about us" data-he="לגבי עצמנו">about us</a>
-        <a href="#blog" data-en="Build Blog" data-he="הרכב תיעודי">Build Blog</a>
-        <a href="#procedures" data-en="procedures" data-he="נהלים ">procedures</a>
-        <a href="#sponsors" data-en="Sponsors" data-he="חסותינו">Sponsors</a>
-    </nav>
-
 
 
     <section id="media" class="vehicle-media">
@@ -65,10 +70,14 @@
 
                 <div class="stacked-images">
                     <img src="drone pic(2).jpg" alt="Top image">
-                    <video class="small-video" controls>
-                        <source src="drone_vid1.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>  
+                    <iframe width="297" height="175" 
+                        src="https://www.youtube.com/embed/b3cL6hCVkE8" 
+                        title="YouTube video player" 
+                        style="border-radius: 10px;" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
                 </div>
 
                 <img src="drone pic Front view (me in the background).jpg" alt="Drone View 3">
@@ -111,7 +120,7 @@
         </ul>
         <h3 data-en="Team pilot" data-he="צוות הטסה">Team pilot:</h3>
         <ul>
-            <li data-en="Shirel terdi-ovdia - Autonomous flight controller" data-he="אחראית הטסה אוטונומית - שיראל טרדי-עובדיה">Shirel terdi-ovdia - Autonomous flight controller</li>
+            <li data-en="Shirel Tardi-ovadia - Autonomous flight controller" data-he="אחראית הטסה אוטונומית - שיראל טרדי-עובדיה">Shirel Tardi-ovadia - Autonomous flight controller</li>
             <li data-en="Emma - Autonomous flight assistant" data-he="פקחית הטסה אוטונומית - אמה">Emma - Autonomous flight assistant</li>
         </ul>
     </section>
