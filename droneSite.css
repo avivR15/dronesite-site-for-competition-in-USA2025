@@ -158,7 +158,6 @@ section {
     margin-left: 35%;
     background: linear-gradient(145deg, #ffffff, #e6f2ff);
     border: 2px solid #0077cc;
-    padding: 10px 20px;
     border-radius:20px;
     cursor: pointer;
     font-weight: bold;
@@ -179,20 +178,31 @@ section {
     border-radius: 10px;
     border: 1px solid #0077cc;
     transform: scale(2.4);
-    font-size: 13px;
+    font-size: 12px;
     outline: none;
+    padding-left: 6px;
+}
+
+
+.errorCase {
+    margin-top: 60px;
+    margin-left: 38%;
+    position: absolute;
+    display: flex;
+    text-align: center;
 }
 
 
 @media (max-width: 640px) {
     .searchBar {
-        width: 80%;
+        width: 70%;
         max-width: 350px;
         position: static;
         display: flex;
-        margin-bottom: 20px;
-        margin-right: 0px;
-        margin-left: 75px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        margin-right: 20px;
+        margin-left: 120px;
     }
 
     .langBtn {
@@ -205,10 +215,15 @@ section {
         text-align: center;
         font-size: 16px;
     }
+    h1 {
+        font-size: 26px;
+    }
+
+
 
     #searchInput {
         width: 50%;
-        font-size: 14px;
+        font-size: 12px;
         margin-left: 0px;
         text-align: left;
     }
@@ -218,18 +233,17 @@ section {
         margin-left: auto;
         font-size: 6px;
     }
+
+    .errorCase {
+        margin-top: -30px;
+        margin-left: 30px;
+    }
 }
     
 
 
 
-.errorCase {
-    margin-top: 60px;
-    margin-left: 38%;
-    position: absolute;
-    display: flex;
-    text-align: center;
-}
+
 
 
 
