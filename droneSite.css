@@ -46,7 +46,6 @@ h4 {
     
 @media (max-width: 910px) {
     .row {
-        flex-dirction: column; 
         align-items: center; 
         gap: 20px; 
     }
