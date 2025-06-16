@@ -255,13 +255,13 @@ section {
   
 .carousel {
     display: flex;
-    align-items: ceter;
+    align-items: center;
     justify-content: center;
     width: 100%;
     position: relative;
     overflow: hidden;
     background-color: #f0f0f0;
-    max-height: 160px; /*שומר שהגובה לא יהרוס את הקונטיינר של הקרוסלה*/
+    max-height: 560px; /*שומר שהגובה לא יהרוס את הקונטיינר של הקרוסלה*/
 }
 
 
