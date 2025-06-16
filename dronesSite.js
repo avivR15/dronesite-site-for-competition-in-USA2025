@@ -19,10 +19,10 @@ function toggleLanguage() {
 
 //רשימת התמונות של הקבוצה
 const images = [
-    "main gruop image(1).jpg",
     "main gruop image(2).jpg",
     "main gruop image(3).jpg",
-    "main gruop image(4).jpg"
+    "main gruop image(4).jpg",
+    "main gruop image(1).jpg"
 ];
 
 let currentIndex = 0;
@@ -46,6 +46,23 @@ function prevImage() {
     showImage(currentIndex);
 }
 
+
+
+//הוספת טקסט לתמונות
+function updateCarousel() {
+  const img = document.getElementById("carouselImage");
+  const caption = document.getElementById("carouselCaption");
+
+  img.src = images[currentIndex];
+
+  // עדכון טקסט רק אם זה לא התמונה הראשונה
+  if (currentIndex > 0) {
+    caption.textContent = "מהתחרות לפני שנתיים";
+  } else {
+    caption.textContent = ""; // אין טקסט לתמונה הראשונה
+  }
+}
+window.onload = updateCarousel;
 
 
 // Auto-scroll
